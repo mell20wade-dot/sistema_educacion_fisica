@@ -36,7 +36,7 @@ def registrar_estudiante(estudiantes):
     nombre = input("Nombre: ")
     edad = int(input("Edad: "))
     grado = input("Grado/Grupo: ")
-    flexiones = int(input("Cantidad de flexiones realizadas: "))
+    pechadas = int(input("Cantidad de pechadas realizadas: "))
     abdominales = int(input("Cantidad de abdominales realizadas: "))
     salto = float(input("Salto de longitud (metros): "))
     tiempo_50m = float(input("Tiempo en carrera de 50m (segundos): "))
@@ -45,7 +45,7 @@ def registrar_estudiante(estudiantes):
         "nombre": nombre,
         "edad": edad,
         "grado": grado,
-        "flexiones": flexiones,
+        "pechadas": pechadas,
         "abdominales": abdominales,
         "salto": salto,
         "tiempo_50m": tiempo_50m,
@@ -53,7 +53,33 @@ def registrar_estudiante(estudiantes):
     estudiantes.append(estudiante)
     print(f"Estudiante '{nombre}' registrado con éxito.")
 
+# ======================================================
+# BLOQUE 3 - Función: listar_estudiantes()
+# Responsable: [SUSANA MORENO CORDOBA]
+# ======================================================
+def listar_estudiantes(estudiantes):
+    """Muestra en pantalla el nombre y grado de todos los
+    estudiantes registrados."""
+    print("\n--- Lista de estudiantes ---")
+    if not estudiantes:
+        print("No hay estudiantes ocupa cerebro agrega estudiantes despues pide lista.")
+        return
 
+    for i, est in enumerate(estudiantes, start=1):
+        print(f"{i}. {est['nombre']} - Grado: {est['grado']}")
+
+
+# ======================================================
+# BLOQUE 4 - Función: buscar_estudiante()
+# Responsable: [SUSANA MORENO CORDOBA]
+# ======================================================
+def buscar_estudiante(estudiantes, nombre):
+    """Busca un estudiante por nombre dentro de la lista y
+    devuelve sus datos, o None si no existe."""
+    for est in estudiantes:
+        if est["nombre"].lower() == nombre.lower():
+            return est
+    return None
 
 
 
@@ -65,7 +91,7 @@ def evaluar_condicion_fisica(estudiante):
     """Calcula el nivel de condición física de un estudiante
     según 4 criterios: flexiones, abdominales, salto y tiempo."""
     puntos = 0
-    if estudiante["flexiones"] >= 20:
+    if estudiante["pechadas"] >= 20:
         puntos += 1
     if estudiante["abdominales"] >= 25:
         puntos += 1
