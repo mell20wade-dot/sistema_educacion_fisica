@@ -12,7 +12,7 @@ diccionario representa un estudiante.
 
 # ======================================================
 # BLOQUE 1 - Función: mostrar_menu()
-# Responsable: [MELL BRYAN CENTONO]
+# Responsable: [MELL BRYAN CENTENO]
 # ======================================================
 def mostrar_menu():
     """Muestra las opciones disponibles del programa."""
@@ -27,7 +27,7 @@ def mostrar_menu():
 
 # ======================================================
 # BLOQUE 2 - Función: registrar_estudiante()
-# Responsable: [SUSANA MORENO CORDOBA]
+# Responsable: [MELL BRYAN CENTENO]
 # ======================================================
 def registrar_estudiante(estudiantes):
     """Pide los datos de un estudiante por teclado y lo agrega
