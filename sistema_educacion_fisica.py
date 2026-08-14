@@ -12,7 +12,7 @@ diccionario representa un estudiante.
 
 # ======================================================
 # BLOQUE 1 - Función: mostrar_menu()
-# Responsable: [NOMBRE TUYO]
+# Responsable: [MELL BRYAN CENTONO]
 # ======================================================
 def mostrar_menu():
     """Muestra las opciones disponibles del programa."""
@@ -27,7 +27,7 @@ def mostrar_menu():
 
 # ======================================================
 # BLOQUE 2 - Función: registrar_estudiante()
-# Responsable: [NOMBRE TUYO]
+# Responsable: [SUSANA MORENO CORDOBA]
 # ======================================================
 def registrar_estudiante(estudiantes):
     """Pide los datos de un estudiante por teclado y lo agrega
@@ -56,7 +56,7 @@ def registrar_estudiante(estudiantes):
 
 # ======================================================
 # BLOQUE 3 - Función: listar_estudiantes()
-# Responsable: [NOMBRE COMPAÑERO 1]
+# Responsable: [SUSANA MORENO CORDOBA]
 # ======================================================
 def listar_estudiantes(estudiantes):
     """Muestra en pantalla el nombre y grado de todos los
@@ -72,7 +72,7 @@ def listar_estudiantes(estudiantes):
 
 # ======================================================
 # BLOQUE 4 - Función: buscar_estudiante()
-# Responsable: [NOMBRE COMPAÑERO 1]
+# Responsable: [SUSANA MORENO CORDOBA]
 # ======================================================
 def buscar_estudiante(estudiantes, nombre):
     """Busca un estudiante por nombre dentro de la lista y
@@ -85,7 +85,7 @@ def buscar_estudiante(estudiantes, nombre):
 
 # ======================================================
 # BLOQUE 5 - Función: evaluar_condicion_fisica()
-# Responsable: [NOMBRE COMPAÑERO 2]
+# Responsable: [GESLER MARTIN CALDERON]
 # ======================================================
 def evaluar_condicion_fisica(estudiante):
     """Calcula el nivel de condición física de un estudiante
@@ -112,7 +112,7 @@ def evaluar_condicion_fisica(estudiante):
 
 # ======================================================
 # BLOQUE 6 - Función: eliminar_estudiante()
-# Responsable: [NOMBRE COMPAÑERO 2]
+# Responsable: [GESLER MARTIN CALDERON]
 # ======================================================
 def eliminar_estudiante(estudiantes, nombre):
     """Elimina un estudiante de la lista si existe. Devuelve
@@ -126,7 +126,7 @@ def eliminar_estudiante(estudiantes, nombre):
 
 # ======================================================
 # BLOQUE 7 - Función: main()
-# Responsable: [SE ARMA ENTRE LOS 3, conecta todos los bloques]
+# Responsable: [SE ARMO ENTRE LOS 3, conecta todos los bloques]
 # ======================================================
 def main():
     """Función principal: contiene el bucle del menú y conecta
