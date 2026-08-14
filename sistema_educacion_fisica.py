@@ -54,33 +54,7 @@ def registrar_estudiante(estudiantes):
     print(f"Estudiante '{nombre}' registrado con éxito.")
 
 
-# ======================================================
-# BLOQUE 3 - Función: listar_estudiantes()
-# Responsable: [SUSANA MORENO CORDOBA]
-# ======================================================
-def listar_estudiantes(estudiantes):
-    """Muestra en pantalla el nombre y grado de todos los
-    estudiantes registrados."""
-    print("\n--- Lista de estudiantes ---")
-    if not estudiantes:
-        print("No hay estudiantes registrados.")
-        return
 
-    for i, est in enumerate(estudiantes, start=1):
-        print(f"{i}. {est['nombre']} - Grado: {est['grado']}")
-
-
-# ======================================================
-# BLOQUE 4 - Función: buscar_estudiante()
-# Responsable: [SUSANA MORENO CORDOBA]
-# ======================================================
-def buscar_estudiante(estudiantes, nombre):
-    """Busca un estudiante por nombre dentro de la lista y
-    devuelve sus datos, o None si no existe."""
-    for est in estudiantes:
-        if est["nombre"].lower() == nombre.lower():
-            return est
-    return None
 
 
 # ======================================================
